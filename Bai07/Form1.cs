@@ -74,14 +74,14 @@ namespace Bai07
                     button.ChangeColorToNone();
                     break;
                 case colorSeats.HasChosen:
-                    MessageBox.Show("Ghế này đã được chọn. Vui lòng chọn ghế khác!", "Mèo méo meo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Ghế này đã được chọn. Vui lòng chọn ghế khác!", "...s", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     break;
                 default:
                     break;
             }
         }
 
-        private void button_pick_Click(object sender, EventArgs e)
+        private void button_pick_Click_1(object sender, EventArgs e)
         {
             int total = 0;
             foreach (var item in buttonsGheNgoi)
@@ -95,9 +95,10 @@ namespace Bai07
                 }
             }
             textBox_thanhtien.Text = total.ToString();
+
         }
 
-        private void button_cancel_Click(object sender, EventArgs e)
+        private void button_cancel_Click_1(object sender, EventArgs e)
         {
             foreach (var item in buttonsGheNgoi)
             {
@@ -108,11 +109,12 @@ namespace Bai07
                 }
             }
             textBox_thanhtien.Text = 0.ToString();
+
         }
-        private void button_Quit_Click(object sender, EventArgs e)
+
+        private void button_Quit_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
-
     }
 }
