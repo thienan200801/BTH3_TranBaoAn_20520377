@@ -16,15 +16,25 @@ namespace Bai07
         public Form1()
         {
             InitializeComponent();
+            CreateSeatsButton();
         }
 
         private void CreateSeatsButton()
         {
+            Random ran = new Random();
             for (int i = 1; i <= 15; i++)
             {
                 ButtonGheNgoi buttonGheNgoi = new ButtonGheNgoi();
                 buttonGheNgoi.Text = i.ToString();
                 buttonGheNgoi.priceSeat = i;
+                buttonGheNgoi.Click += ButtonGheNgoi_Click;
+                if (i % 5 == 0) { flowLayoutPanel1.SetFlowBreak(buttonGheNgoi, true); }
+
+                if (ran.Next(10) > 5)
+                {
+                    buttonGheNgoi.ChangeColorToHasChosen();
+                }
+                
                 if (i <= 5)
                 {
                     buttonGheNgoi.priceSeat = 5000;
@@ -43,6 +53,20 @@ namespace Bai07
                 flowLayoutPanel1.Controls.Add(buttonGheNgoi);
             }
 
+        }
+
+        private void ButtonGheNgoi_Click(object sender, EventArgs e)
+        {
+            ButtonGheNgoi btn = (ButtonGheNgoi)sender;
+            switch (btn.myCorlorSeats) {
+                case colorSeats.None:
+                    btn.ChangeColorToAreChosing();
+                    break;
+                case colorSeats.AreChosing:
+                    btn.ChangeColorToNone();
+                    break;
+            }
+            return;
         }
 
         private void Form1_Load(object sender, EventArgs e)

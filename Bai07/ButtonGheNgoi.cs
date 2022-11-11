@@ -12,6 +12,10 @@ namespace Bai07
 {
     class ButtonGheNgoi : Button
     {
+
+        public int id { get; set; }
+
+
         public ButtonGheNgoi()
         {
             this.Height = 60;
