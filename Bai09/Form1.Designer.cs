@@ -74,6 +74,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 357);
             this.panel1.TabIndex = 0;
@@ -82,6 +83,7 @@
             // 
             this.nuTxt.AutoSize = true;
             this.nuTxt.Location = new System.Drawing.Point(321, 116);
+            this.nuTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nuTxt.Name = "nuTxt";
             this.nuTxt.Size = new System.Drawing.Size(46, 20);
             this.nuTxt.TabIndex = 15;
@@ -92,6 +94,7 @@
             // 
             this.namTxt.AutoSize = true;
             this.namTxt.Location = new System.Drawing.Point(217, 116);
+            this.namTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.namTxt.Name = "namTxt";
             this.namTxt.Size = new System.Drawing.Size(58, 20);
             this.namTxt.TabIndex = 14;
@@ -100,7 +103,8 @@
             // 
             // chuyennganhTxt
             // 
-            this.chuyennganhTxt.Location = new System.Drawing.Point(217, 83);
+            this.chuyennganhTxt.Location = new System.Drawing.Point(217, 82);
+            this.chuyennganhTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chuyennganhTxt.Name = "chuyennganhTxt";
             this.chuyennganhTxt.Size = new System.Drawing.Size(508, 22);
             this.chuyennganhTxt.TabIndex = 13;
@@ -108,6 +112,7 @@
             // hotenTxt
             // 
             this.hotenTxt.Location = new System.Drawing.Point(217, 50);
+            this.hotenTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hotenTxt.Name = "hotenTxt";
             this.hotenTxt.Size = new System.Drawing.Size(508, 22);
             this.hotenTxt.TabIndex = 12;
@@ -115,6 +120,7 @@
             // mssvTxt
             // 
             this.mssvTxt.Location = new System.Drawing.Point(217, 12);
+            this.mssvTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mssvTxt.Name = "mssvTxt";
             this.mssvTxt.Size = new System.Drawing.Size(508, 22);
             this.mssvTxt.TabIndex = 11;
@@ -122,17 +128,19 @@
             // deleteBtn
             // 
             this.deleteBtn.Location = new System.Drawing.Point(439, 306);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(145, 29);
+            this.deleteBtn.Size = new System.Drawing.Size(145, 30);
             this.deleteBtn.TabIndex = 10;
             this.deleteBtn.Text = "Xóa chọn";
             this.deleteBtn.UseVisualStyleBackColor = true;
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(234, 306);
+            this.saveBtn.Location = new System.Drawing.Point(235, 306);
+            this.saveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(145, 29);
+            this.saveBtn.Size = new System.Drawing.Size(145, 30);
             this.saveBtn.TabIndex = 9;
             this.saveBtn.Text = "Lưu thông tin";
             this.saveBtn.UseVisualStyleBackColor = true;
@@ -140,18 +148,21 @@
             // 
             // dltChooseBtn
             // 
-            this.dltChooseBtn.Location = new System.Drawing.Point(370, 241);
+            this.dltChooseBtn.Location = new System.Drawing.Point(371, 241);
+            this.dltChooseBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dltChooseBtn.Name = "dltChooseBtn";
-            this.dltChooseBtn.Size = new System.Drawing.Size(77, 40);
+            this.dltChooseBtn.Size = new System.Drawing.Size(77, 39);
             this.dltChooseBtn.TabIndex = 8;
             this.dltChooseBtn.Text = "<";
             this.dltChooseBtn.UseVisualStyleBackColor = true;
+            this.dltChooseBtn.Click += new System.EventHandler(this.dltChooseBtn_Click);
             // 
             // chooseBtn
             // 
-            this.chooseBtn.Location = new System.Drawing.Point(370, 195);
+            this.chooseBtn.Location = new System.Drawing.Point(371, 194);
+            this.chooseBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chooseBtn.Name = "chooseBtn";
-            this.chooseBtn.Size = new System.Drawing.Size(77, 40);
+            this.chooseBtn.Size = new System.Drawing.Size(77, 39);
             this.chooseBtn.TabIndex = 7;
             this.chooseBtn.Text = ">";
             this.chooseBtn.UseVisualStyleBackColor = true;
@@ -161,11 +172,12 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(478, 195);
+            this.listBox2.Location = new System.Drawing.Point(477, 194);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(247, 84);
             this.listBox2.TabIndex = 6;
-//            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // listBox1
             // 
@@ -175,10 +187,12 @@
             "Cơ sở dữ liệu",
             "Cơ sở DL NC",
             "PTTK Hệ thống thông tin"});
-            this.listBox1.Location = new System.Drawing.Point(88, 195);
+            this.listBox1.Location = new System.Drawing.Point(88, 194);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(247, 84);
             this.listBox1.TabIndex = 5;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -235,10 +249,11 @@
             this.Gender,
             this.Subject});
             this.dataGridView.Location = new System.Drawing.Point(59, 375);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(678, 150);
+            this.dataGridView.Size = new System.Drawing.Size(677, 150);
             this.dataGridView.TabIndex = 1;
             // 
             // MSSV
@@ -280,11 +295,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 573);
+            this.ClientSize = new System.Drawing.Size(800, 574);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             //this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "4";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
